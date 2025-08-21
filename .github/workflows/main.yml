@@ -9,8 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Minha primeira ação"
+        #working-directory: #executa o comando dentro e um diretório específico
         run: echo "Hello World !!!"
       - name: "Segunda ação"
         run: |
           echo "Primeiro workflow criado!"
           echo "Well done!"
+      - name: "Script Python"
+        run: |
+          variavel = "Executado com python"
+          print(variavel)
+        shell: python #qual o tipo de terminal executará a ação https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defaultsrunshell
+        
