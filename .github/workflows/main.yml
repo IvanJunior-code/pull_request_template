@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: "Minha primeira ação"
         #working-directory: #executa o comando dentro e um diretório específico
-        run: echo "Hello World !!!"
+        run: ech "Hello World !!!"
       - name: "Segunda ação"
         run: |
           echo "Primeiro workflow criado!"
