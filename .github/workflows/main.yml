@@ -20,4 +20,11 @@ jobs:
           variavel = "Executado com python"
           print(variavel)
         shell: python #qual o tipo de terminal executará a ação https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defaultsrunshell
-        
+
+  segundo-job:
+    name: "Segundo Job"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Verificação da versão do Node.JS atual"
+        run: node --version
+      
